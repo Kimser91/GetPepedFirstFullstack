@@ -11,3 +11,34 @@ lære seg Vue og produsere noe som er relativt funksjonabelt regner jeg med 1 uk
 
 ta med ca 50% mer tid enn forventet så er ca 3 uker brukt av de 4 jeg har avsatt så da er det 1 uke igjen til forbedringer og 
 finpuss av frontend
+
+Detaljert plan:
+
+1. Database.
+    1. sette opp database, 
+        punkt som må være i tabellen:
+        1. Id
+        2. Navn
+        3. artikkelnr
+        4. beskrivelse
+        5. pris
+    2. bygge databasen,
+        finne ut om det er en måte å hente data på
+        evt om jeg kan bruke en form for generator for å lage det
+
+2. API.
+    1. bygge et API 
+    2. finne ut hvordan man kobler sammen databasen og API
+    3. finne ut hvordan man kobler API mot bruker portalen(nettsiden)
+
+3.  Nettsiden.
+    1. finne et frontend rammeverk som er lett å bruke i.e. Bootstrap!
+    2. finne ut hvordan man bruker det.
+    3. kartlegge funksjoner som trengs på nettside.
+    4. starte å bygge nettsiden i MVC JS.
+
+    5. ting som skal være på nettsiden.
+        1. header med logo og søkebar (logo navigerer tilbake til mainView)
+        2. left static sidebar(skal inneholde navigerings meny)
+        3. main body(her er alt av produkter som samsvarer med søkekritereier eller menyvalg)
+        4. skape en heilight funksjon som produserer nyheter og/eller populære produkter  
