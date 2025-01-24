@@ -1,3 +1,20 @@
+Title: Pc Dreamshop (working title)
+
+Tech: SQL(SSMS), Node.js, Vue,
+
+Acknowledgements: Youtube(Bro Code, Coding with Mosh), StackOverflow, w3Schools, Get Moodel, Kodelærer Stian Sundby
+
+Lessons learned: 
+    1. Hva er SQL og hvordan lage en tabell.
+    2. Hva er et API og hvordan konstruere det.
+    3. Hvordan kalle på databasen med et API.
+    4. Hvordan vise informasjonen fra databasen på en nettside. 
+
+
+
+
+Plan:
+
 Lage en Komplett.no/Proshop.no replica
 
 Trello link: https://trello.com/invite/b/6790c423a4c6f49e50a55ad5/ATTIe2b28ad919a008fddd246d7886726559FEDAE1F7/pc-nettbutikk
@@ -42,3 +59,6 @@ Detaljert plan:
         2. left static sidebar(skal inneholde navigerings meny)
         3. main body(her er alt av produkter som samsvarer med søkekritereier eller menyvalg)
         4. skape en heilight funksjon som produserer nyheter og/eller populære produkter  
+
+
+
