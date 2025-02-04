@@ -39,6 +39,7 @@ Detaljert plan:
         3. artikkelnr
         4. beskrivelse
         5. pris
+        6. Lagerstatus
     2. bygge databasen,
         finne ut om det er en måte å hente data på
         evt om jeg kan bruke en form for generator for å lage det
@@ -49,16 +50,18 @@ Detaljert plan:
     3. finne ut hvordan man kobler API mot bruker portalen(nettsiden)
 
 3.  Nettsiden.
-    1. finne et frontend rammeverk som er lett å bruke i.e. Bootstrap!
-    2. finne ut hvordan man bruker det.
-    3. kartlegge funksjoner som trengs på nettside.
-    4. starte å bygge nettsiden i MVC JS.
+    1. bruke Vue Rammeverk og Bootstrap CSS!
+    2. konstruere basissttukturen på nettsiden i.e Header, sidebar og Main body. 
+    3. kartlegge funksjoner som trengs på nettsiden.
+    4. bygge Print funksjoner slik at nettsiden blir dynamisk konstruert etter databasen
+    5. Lage en Adminportal? for å kunne legge til, endre/fjerne produkter
 
-    5. ting som skal være på nettsiden.
+    6. ting som skal være på nettsiden.
         1. header med logo og søkebar (logo navigerer tilbake til mainView)
         2. left static sidebar(skal inneholde navigerings meny)
         3. main body(her er alt av produkter som samsvarer med søkekritereier eller menyvalg)
         4. skape en heilight funksjon som produserer nyheter og/eller populære produkter  
+        5. handlevogn
 
 
 
