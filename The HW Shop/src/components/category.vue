@@ -9,6 +9,12 @@ const products = ref([]);
 const props = defineProps({
   darkMode: Boolean,
 });
+/**
+ * Get Products With Param Category
+ * @async
+ * @param category 
+ * @returns {status} ok/error
+ */
 const fetchProducts = async (category) => {
   try {
     const response = await axios.get(`http://localhost:3000/Components?type=${category}`);
@@ -18,10 +24,18 @@ const fetchProducts = async (category) => {
   }
 };
 
+/**
+ * since the only way to use Category.vue is to make a choice on leftSidebar.vue
+ * this is the function that starts the page and ..categoryName will never be 'null' or ""
+ */
 onMounted(() => {
   fetchProducts(route.params.categoryName);
 });
 
+/**
+ * Watching for changes in rout.params
+ * this watches for oncliks for leftSidebar.vue
+ */
 watch(
   () => route.params.categoryName,
   fetchProducts

@@ -155,8 +155,6 @@ onMounted(() => {
           </tr>
         </tbody>
       </table>
-
-      <button class="btn btn-success" @click="addUser">Add New User</button>
       
       <div v-if="editingUser" class="mt-4">
         <h3>Edit User</h3>

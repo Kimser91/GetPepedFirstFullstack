@@ -20,6 +20,12 @@ watch(
 
 const toastRef = ref(null);
 
+/**
+* Add Item To Cart
+*@async
+*@function addToCart
+*@return {status} OK/error
+*/
 const addToCart = async () => {
   try {
     const token = localStorage.getItem("token");

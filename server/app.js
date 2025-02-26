@@ -58,11 +58,20 @@ app.post("/send-email", async (req, res) => {
   if (!name || !phone || !email || !subject || !message) {
     return res.status(400).json({ error: "Alle feltene må fylles ut." });
   }
+
+  const emailText = `
+  Fra: ${name}
+  Tlf: ${phone}
+  Mail: ${email}
+
+  Beskjed: ${message}
+
+  `;
   const mailOptions = {
-    from: process.env.EMAIL_FROM,
-    to: userEmail,
-    subject: "Din bestilling er bekreftet!",
-    text: "Takk for din bestilling. Vi behandler den nå!",
+    from: email,
+    to: process.env.SMTP_USER,
+    subject: subject,
+    text: emailText,
   };
   try {
     await transporter.sendMail(mailOptions);
