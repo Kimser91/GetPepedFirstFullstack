@@ -10,6 +10,12 @@ const message = ref("");
 const successMessage = ref("");
 const errorMessage = ref("");
 
+
+/**
+ * Mail sending function with form controll and error catching
+ * @function
+ * @async
+ */
 const sendEmail = async () => {
   if (!name.value || !phone.value || !email.value || !subject.value || !message.value) {
     errorMessage.value = "❌ Please fill out all fields.";
